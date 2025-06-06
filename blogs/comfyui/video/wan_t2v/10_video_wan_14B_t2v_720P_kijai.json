@@ -222,79 +222,6 @@
       ]
     },
     {
-      "id": 52,
-      "type": "WanVideoTeaCache",
-      "pos": [
-        1470,
-        -600
-      ],
-      "size": [
-        315,
-        178
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "teacache_args",
-          "type": "TEACACHEARGS",
-          "links": [
-            56
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-wanvideowrapper",
-        "ver": "1.1.8",
-        "Node name for S&R": "WanVideoTeaCache"
-      },
-      "widgets_values": [
-        0.25,
-        1,
-        -1,
-        "offload_device",
-        "true",
-        "e"
-      ]
-    },
-    {
-      "id": 55,
-      "type": "WanVideoEnhanceAVideo",
-      "pos": [
-        1470,
-        -760
-      ],
-      "size": [
-        315,
-        106
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "feta_args",
-          "type": "FETAARGS",
-          "links": [
-            57
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-wanvideowrapper",
-        "ver": "1.1.8",
-        "Node name for S&R": "WanVideoEnhanceAVideo"
-      },
-      "widgets_values": [
-        2,
-        0,
-        1
-      ]
-    },
-    {
       "id": 54,
       "type": "Note",
       "pos": [
@@ -306,7 +233,7 @@
         88
       ],
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -329,7 +256,7 @@
         170
       ],
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -352,7 +279,7 @@
         88
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -375,7 +302,7 @@
         88
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -398,7 +325,7 @@
         152.77333068847656
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -421,7 +348,7 @@
         88
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -444,7 +371,7 @@
         202
       ],
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -482,7 +409,7 @@
         154
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -509,83 +436,6 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 30,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        1860,
-        -360
-      ],
-      "size": [
-        830,
-        1788
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 36
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "1.6.1",
-        "Node name for S&R": "VHS_VideoCombine"
-      },
-      "widgets_values": {
-        "frame_rate": 16,
-        "loop_count": 0,
-        "filename_prefix": "WanVideo2_1_T2V",
-        "format": "video/h264-mp4",
-        "pix_fmt": "yuv420p",
-        "crf": 19,
-        "save_metadata": true,
-        "trim_to_audio": false,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "WanVideo2_1_T2V_00012.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 16,
-            "workflow": "WanVideo2_1_T2V_00012.png",
-            "fullpath": "/apdcephfs_cq9/share_1447896/xuehuiyu/Workspace/work/image_gen/projects/ComfyUI/output/WanVideo2_1_T2V_00012.mp4"
-          }
-        }
-      }
     },
     {
       "id": 22,
@@ -683,7 +533,7 @@
         130
       ],
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -729,7 +579,7 @@
         82
       ],
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -811,6 +661,177 @@
       ]
     },
     {
+      "id": 16,
+      "type": "WanVideoTextEncode",
+      "pos": [
+        1050,
+        -50
+      ],
+      "size": [
+        350,
+        260
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "t5",
+          "type": "WANTEXTENCODER",
+          "link": 15
+        },
+        {
+          "name": "model_to_offload",
+          "shape": 7,
+          "type": "WANVIDEOMODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_embeds",
+          "type": "WANVIDEOTEXTEMBEDS",
+          "slot_index": 0,
+          "links": [
+            30
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-wanvideowrapper",
+        "ver": "1.1.8",
+        "Node name for S&R": "WanVideoTextEncode"
+      },
+      "widgets_values": [
+        "4-second left-to-right circular dolly shot around a woman in a gray tee and pink headband, standing still with clasped hands indoors. Background includes large windows, wooden cabinets, and soft natural light. Smooth shoulder-level camera rotation orbits fully around her, maintaining constant eye contact. realistic, everyday style.",
+        "blurry, low resolution, extra fingers, neon lights, cartoonish",
+        true
+      ]
+    },
+    {
+      "id": 36,
+      "type": "Note",
+      "pos": [
+        640,
+        -580
+      ],
+      "size": [
+        340,
+        170
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "fp8_fast seems to cause huge quality degradation\n\nfp_16_fast enables \"Full FP16 Accmumulation in FP16 GEMMs\" feature available in the very latest pytorch nightly, this is around 20% speed boost. \n\nSageattn if you have it installed can be used for almost double inference speed\n\nhttps://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-T2V-14B_fp8_e4m3fn.safetensors?download=true"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 58,
+      "type": "Note",
+      "pos": [
+        1045.72607421875,
+        -595.7112426757812
+      ],
+      "size": [
+        340,
+        170
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "1. 修改权重路径\n2. 修改分辨率\n3. sampler shift 5 => 8\n   step 25 => 20"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 30,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1946.98681640625,
+        -373.19427490234375
+      ],
+      "size": [
+        830,
+        1788
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 36
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "1.6.1",
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "WanVideo2_1_T2V",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "WanVideo2_1_T2V_00014.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 16,
+            "workflow": "WanVideo2_1_T2V_00014.png",
+            "fullpath": "/apdcephfs_cq9/share_1447896/xuehuiyu/Workspace/work/image_gen/projects/ComfyUI/output/WanVideo2_1_T2V_00014.mp4"
+          }
+        }
+      }
+    },
+    {
       "id": 37,
       "type": "WanVideoEmptyEmbeds",
       "pos": [
@@ -853,6 +874,44 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
+    },
+    {
+      "id": 52,
+      "type": "WanVideoTeaCache",
+      "pos": [
+        1470,
+        -600
+      ],
+      "size": [
+        315,
+        178
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "teacache_args",
+          "type": "TEACACHEARGS",
+          "links": [
+            56
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-wanvideowrapper",
+        "ver": "1.1.8",
+        "Node name for S&R": "WanVideoTeaCache"
+      },
+      "widgets_values": [
+        0.25,
+        1,
+        -1,
+        "offload_device",
+        "true",
+        "e"
+      ]
     },
     {
       "id": 27,
@@ -970,7 +1029,7 @@
         20,
         6,
         8.000000000000002,
-        1057359483639287,
+        1057359483639288,
         "fixed",
         true,
         "unipc",
@@ -981,98 +1040,39 @@
       ]
     },
     {
-      "id": 16,
-      "type": "WanVideoTextEncode",
+      "id": 55,
+      "type": "WanVideoEnhanceAVideo",
       "pos": [
-        1050,
-        -50
+        1470,
+        -760
       ],
       "size": [
-        350,
-        260
+        315,
+        106
       ],
       "flags": {},
-      "order": 21,
+      "order": 17,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "t5",
-          "type": "WANTEXTENCODER",
-          "link": 15
-        },
-        {
-          "name": "model_to_offload",
-          "shape": 7,
-          "type": "WANVIDEOMODEL",
-          "link": null
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "name": "text_embeds",
-          "type": "WANVIDEOTEXTEMBEDS",
-          "slot_index": 0,
+          "name": "feta_args",
+          "type": "FETAARGS",
           "links": [
-            30
+            57
           ]
         }
       ],
       "properties": {
         "cnr_id": "comfyui-wanvideowrapper",
         "ver": "1.1.8",
-        "Node name for S&R": "WanVideoTextEncode"
+        "Node name for S&R": "WanVideoEnhanceAVideo"
       },
       "widgets_values": [
-        "4-second left-to-right circular dolly shot around a woman in a gray tee and pink headband, standing still with clasped hands indoors. Background includes large windows, wooden cabinets, and soft natural light. Smooth shoulder-level camera rotation orbits fully around her, maintaining constant eye contact. realistic, everyday style.",
-        "blurry, low resolution, extra fingers, neon lights, cartoonish",
-        true
+        2.0000000000000004,
+        0,
+        1
       ]
-    },
-    {
-      "id": 36,
-      "type": "Note",
-      "pos": [
-        640,
-        -580
-      ],
-      "size": [
-        340,
-        170
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "fp8_fast seems to cause huge quality degradation\n\nfp_16_fast enables \"Full FP16 Accmumulation in FP16 GEMMs\" feature available in the very latest pytorch nightly, this is around 20% speed boost. \n\nSageattn if you have it installed can be used for almost double inference speed\n\nhttps://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-T2V-14B_fp8_e4m3fn.safetensors?download=true"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 58,
-      "type": "Note",
-      "pos": [
-        1045.72607421875,
-        -595.7112426757812
-      ],
-      "size": [
-        340,
-        170
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "1. 修改权重路径\n2. 修改分辨率\n3. sampler shift 5 => 8\n   step 25 => 20"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1233,10 +1233,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6115909044841885,
+      "scale": 0.9849732675808319,
       "offset": [
-        -253.8171977447464,
-        844.0581132527442
+        -1027.1695783224754,
+        912.7210692128149
       ]
     },
     "node_versions": {

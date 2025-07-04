@@ -1,53 +1,7 @@
 {
-  "id": "e7533930-2792-43a9-b4b5-ded4617d8a43",
-  "revision": 0,
-  "last_node_id": 57,
-  "last_link_id": 114,
+  "last_node_id": 59,
+  "last_link_id": 116,
   "nodes": [
-    {
-      "id": 8,
-      "type": "VAEDecode",
-      "pos": [
-        1440,
-        400
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 35
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 76
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            56,
-            93
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.38",
-        "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": []
-    },
     {
       "id": 28,
       "type": "SaveAnimatedWEBP",
@@ -149,14 +103,14 @@
         },
         {
           "name": "clip_vision_output",
-          "shape": 7,
           "type": "CLIP_VISION_OUTPUT",
+          "shape": 7,
           "link": null
         },
         {
           "name": "start_image",
-          "shape": 7,
           "type": "IMAGE",
+          "shape": 7,
           "link": null
         }
       ],
@@ -164,20 +118,20 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "slot_index": 0,
-          "links": []
+          "links": [],
+          "slot_index": 0
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "slot_index": 1,
-          "links": []
+          "links": [],
+          "slot_index": 1
         },
         {
           "name": "latent",
           "type": "LATENT",
-          "slot_index": 2,
-          "links": []
+          "links": [],
+          "slot_index": 2
         }
       ],
       "properties": {
@@ -255,10 +209,10 @@
         {
           "name": "LATENT",
           "type": "LATENT",
-          "slot_index": 0,
           "links": [
             35
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
@@ -267,7 +221,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        709268488387796,
+        721287284336853,
         "randomize",
         20,
         6,
@@ -308,14 +262,14 @@
         },
         {
           "name": "clip_vision_output",
-          "shape": 7,
           "type": "CLIP_VISION_OUTPUT",
+          "shape": 7,
           "link": 107
         },
         {
           "name": "start_image",
-          "shape": 7,
           "type": "IMAGE",
+          "shape": 7,
           "link": 114
         }
       ],
@@ -323,26 +277,26 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "slot_index": 0,
           "links": [
             101
-          ]
+          ],
+          "slot_index": 0
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "slot_index": 1,
           "links": [
             102
-          ]
+          ],
+          "slot_index": 1
         },
         {
           "name": "latent",
           "type": "LATENT",
-          "slot_index": 2,
           "links": [
             103
-          ]
+          ],
+          "slot_index": 2
         }
       ],
       "properties": {
@@ -382,10 +336,10 @@
         {
           "name": "MODEL",
           "type": "MODEL",
-          "slot_index": 0,
           "links": [
             111
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
@@ -422,10 +376,10 @@
         {
           "name": "CONDITIONING",
           "type": "CONDITIONING",
-          "slot_index": 0,
           "links": [
             98
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "title": "CLIP Text Encode (Negative Prompt)",
@@ -470,10 +424,10 @@
         {
           "name": "CLIP_VISION_OUTPUT",
           "type": "CLIP_VISION_OUTPUT",
-          "slot_index": 0,
           "links": [
             107
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
@@ -545,10 +499,10 @@
         {
           "name": "MODEL",
           "type": "MODEL",
-          "slot_index": 0,
           "links": [
             110
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
@@ -589,11 +543,11 @@
         {
           "name": "CLIP",
           "type": "CLIP",
-          "slot_index": 0,
           "links": [
             74,
             75
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
@@ -635,11 +589,11 @@
         {
           "name": "VAE",
           "type": "VAE",
-          "slot_index": 0,
           "links": [
             76,
             99
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
@@ -679,10 +633,10 @@
         {
           "name": "CLIP_VISION",
           "type": "CLIP_VISION",
-          "slot_index": 0,
           "links": [
             94
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
@@ -699,6 +653,49 @@
       },
       "widgets_values": [
         "clip_vision_h.safetensors"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 52,
+      "type": "LoadImage",
+      "pos": [
+        20,
+        610
+      ],
+      "size": [
+        340,
+        326
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            112
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.38",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_00152_.png",
+        "image"
       ],
       "color": "#322",
       "bgcolor": "#533"
@@ -728,10 +725,10 @@
         {
           "name": "CONDITIONING",
           "type": "CONDITIONING",
-          "slot_index": 0,
           "links": [
             97
-          ]
+          ],
+          "slot_index": 0
         }
       ],
       "title": "CLIP Text Encode (Positive Prompt)",
@@ -741,53 +738,134 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "4-second left-to-right circular dolly shot around a woman in a gray tee and pink headband, standing still with clasped hands indoors. Background includes large windows, wooden cabinets, and soft natural light. Smooth shoulder-level camera rotation orbits fully around her, maintaining constant eye contact. Cozy, inviting atmosphere with realistic, everyday style and subtle motion blur."
+        "A minimalist-designed cosmetic bottle rests on fine white sand, with azure waves gently lapping over its base. Sunlight pierces through the water, refracting shimmering light spots on the bottle. Cotton candy-like clouds float where the sea meets the sky. The scene uses cinematic soft-focus filters and ultra-high-definition 8K quality."
       ],
       "color": "#232",
       "bgcolor": "#353"
     },
     {
-      "id": 52,
-      "type": "LoadImage",
+      "id": 8,
+      "type": "VAEDecode",
       "pos": [
-        20,
-        610
+        1440,
+        400
       ],
       "size": [
-        340,
-        326
+        210,
+        46
       ],
       "flags": {},
-      "order": 6,
+      "order": 14,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 35
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 76
+        }
+      ],
       "outputs": [
         {
           "name": "IMAGE",
           "type": "IMAGE",
-          "slot_index": 0,
           "links": [
-            112
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "slot_index": 1,
-          "links": null
+            56,
+            93,
+            116
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.38",
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 59,
+      "type": "CreateVideo",
+      "pos": [
+        1587.54345703125,
+        -63.154273986816406
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 116
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            115
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.42",
+        "Node name for S&R": "CreateVideo"
       },
       "widgets_values": [
-        "e3a9bb2bc59a874639e3c023799e8f4b.png",
-        "image"
+        16
+      ]
+    },
+    {
+      "id": 58,
+      "type": "SaveVideo",
+      "pos": [
+        1926.315185546875,
+        -72.98194885253906
       ],
-      "color": "#322",
-      "bgcolor": "#533"
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 115
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.42",
+        "Node name for S&R": "SaveVideo"
+      },
+      "widgets_values": [
+        "video/ComfyUI",
+        "mp4",
+        "h264"
+      ]
     }
   ],
   "links": [
@@ -942,6 +1020,22 @@
       50,
       4,
       "IMAGE"
+    ],
+    [
+      115,
+      59,
+      0,
+      58,
+      0,
+      "VIDEO"
+    ],
+    [
+      116,
+      8,
+      0,
+      59,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -975,10 +1069,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6934334949441666,
+      "scale": 0.8140274938684023,
       "offset": [
-        -231.52241523261148,
-        73.62229535901523
+        -480.0683161653956,
+        122.05314473800945
       ]
     },
     "frontendVersion": "1.20.7",
